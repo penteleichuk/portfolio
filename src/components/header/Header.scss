@@ -1,0 +1,224 @@
+@use './../common/styles/vars';
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+
+    width: 100%;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: 2;
+
+        width: 100%;
+        height: 100%;
+
+        background: rgb(236 240 243 / 80%);
+        backdrop-filter: blur(5px);
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        height: 80px;
+    }
+
+    &__lang {
+        z-index: 3;
+        display: flex;
+        color: #ccc;
+    }
+
+    &__lang-item {
+        color: #ccc;
+        font-size: .9rem;
+        text-transform: uppercase;
+        margin: 0 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &.active {
+            color: #525252;
+        }
+    }
+
+    &__logo {
+        display: block;
+        overflow: hidden;
+        flex: 0 0 60px;
+        border-radius: 50%;
+        z-index: 3;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__burger {
+        display: none;
+    }
+
+    &__burger.active {
+        &:before {
+            transform: rotate(45deg);
+            top: 9px;
+        }
+
+        &:after {
+            transform: rotate(-45deg);
+            bottom: 9px;
+        }
+
+        span {
+            transform: scale(0);
+        }
+    }
+
+    &__list {
+        display: flex;
+        position: relative;
+        z-index: 2;
+
+        li {
+            margin: 0 0 0 20px;
+
+            &:first-child {
+                margin: 0;
+            }
+        }
+    }
+
+    &__link {
+        margin: 15px 0 10px 0;
+        text-align: center;
+
+        font-size: .8rem;
+        font-weight: 500;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+        color: vars.$primary-color;
+
+        transition: .3s;
+
+        &:hover {
+            cursor: pointer;
+            color: vars.$secondary-color;
+            transition: .3s;
+        }
+    }
+
+    &__link_active {
+        color: vars.$secondary-color;
+    }
+}
+
+@media (max-width: 767px) {
+    body.burger {
+        overflow: hidden;
+    }
+
+    .header {
+        &__body {
+            height: 50px;
+        }
+
+        &__logo {
+            flex: 0 0 40px;
+        }
+
+        &:before {
+            backdrop-filter: blur(3px);
+        }
+
+        &__burger {
+            display: block;
+            width: 30px;
+            height: 20px;
+            position: relative;
+            z-index: 3;
+
+            span {
+                position: absolute;
+                left: 0;
+                top: 9px;
+
+                width: 100%;
+                height: 2px;
+
+                background-color: #20a1ff;
+                transition: all 0.3s ease 0s;
+            }
+
+            &:before, &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+
+                width: 100%;
+                height: 2px;
+
+                background-color: #20a1ff;
+                transition: all 0.3s ease 0s;
+            }
+
+            &:before {
+                top: 0;
+            }
+
+            &:after {
+                bottom: 0;
+            }
+        }
+
+        &__menu {
+            overflow: auto;
+            position: fixed;
+            top: 0;
+            right: -100%;
+
+            width: 100%;
+            height: 100%;
+
+            padding: 70px 10px 20px 10px;
+
+            transition: all 0.5s ease 0s;
+            backdrop-filter: blur(5px);
+            background: rgb(10 49 110 / 90%);
+
+            &.active {
+                right: 0;
+            }
+        }
+
+        &__list {
+            display: block;
+        }
+
+        &__link {
+            color: #c8d2df;
+            font-size: 1.4rem;
+        }
+
+        &__list {
+            li {
+                margin: 0 0 20px 0;
+
+                &:first-child {
+                    margin: 0 0 20px 0;
+                }
+            }
+        }
+    }
+}

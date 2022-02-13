@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Header} from "./components/header/Header";
+import {Page} from "./components/common/page/Page";
+import {Main} from './components/main/Main';
+import {Skills} from "./components/skills/Skills";
+import {Works} from "./components/works/Works";
+import {Offer} from "./components/offer/Offer";
+import {Contacts} from "./components/contacts/Contacts";
+import {Footer} from "./components/footer/Footer";
+import './App.scss';
+import {AnimationBackground} from "./components/common/animation-background/AnimationBackground";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export const App = () => {
+    return (
+        <div className="app">
+            <AnimationBackground/>
+            <Header/>
+            <main className="page">
+                <Page id="main"> <Main/> </Page>
+                <Page id="skill"> <Skills/> </Page>
+                <Page id="work"> <Works/> </Page>
+                <Page heightAuto={true}> <Offer/> </Page>
+                <Page id="contact"> <Contacts/> </Page>
+                <Page heightAuto={true}> <Footer/> </Page>
+            </main>
+        </div>
+    );
 }
-
-export default App;

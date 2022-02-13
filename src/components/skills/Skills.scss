@@ -1,0 +1,34 @@
+.skill {
+    &__title {
+        margin-top: 15px;
+        margin-bottom: 50px;
+
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.2;
+
+        color: #3c3e41;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+}
+
+@media (max-width: 1022px) {
+    .skill {
+        &__body {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .skill {
+        &__body {
+            grid-template-columns: 1fr;
+        }
+    }
+}

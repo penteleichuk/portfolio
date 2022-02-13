@@ -1,0 +1,14 @@
+@use './../common/styles/mixin';
+@use './../common/styles/vars';
+
+.offer {
+    @include mixin.flex-center;
+    flex-direction: column;
+
+    &__title {
+        display: block;
+        margin-bottom: 50px;
+
+        color: vars.$secondary-color;
+    }
+}
