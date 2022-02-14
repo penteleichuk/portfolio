@@ -195,15 +195,11 @@
 
             transition: all 0.5s ease 0s;
             backdrop-filter: blur(5px);
-            background: rgb(10 49 110 / 90%);
+            background: linear-gradient(145deg, #6a68cef5, #279ffedb);
 
             &.active {
                 right: 0;
             }
-        }
-
-        &__list {
-            display: block;
         }
 
         &__link {
@@ -212,6 +208,8 @@
         }
 
         &__list {
+            display: block;
+
             li {
                 margin: 0 0 20px 0;
 
@@ -219,6 +217,10 @@
                     margin: 0 0 20px 0;
                 }
             }
+        }
+
+        &__link_active {
+            color: #20a1ff;
         }
     }
 }
