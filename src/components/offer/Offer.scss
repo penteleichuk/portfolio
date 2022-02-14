@@ -11,4 +11,9 @@
 
         color: vars.$secondary-color;
     }
+
+    &__title {
+        text-align: center;
+        line-height: 2;
+    }
 }
