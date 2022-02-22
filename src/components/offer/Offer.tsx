@@ -5,8 +5,8 @@ import './Offer.scss';
 export const Offer = () => {
     return (
         <div className="offer">
-            <h5 className="offer__title subtitle">Рассматриваю варианты удаленной работы</h5>
-            <Link to="contact" smooth={true} className="button offer__button">Нанять меня</Link>
+            <h5 className="offer__title subtitle">Considering remote work options</h5>
+            <Link to="contact" smooth={true} className="button offer__button">Hire me</Link>
         </div>
     );
 }
