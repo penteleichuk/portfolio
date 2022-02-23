@@ -13,10 +13,9 @@ import {AnimationBackground} from "./components/common/animation-background/Anim
 export const App = () => {
     return (
         <div className="app">
-            <AnimationBackground/>
             <Header/>
             <main className="page">
-                <Page id="main"> <Main/> </Page>
+                <Page id="main" animationBg={true}> <Main/> </Page>
                 <Page id="skill"> <Skills/> </Page>
                 <Page id="work"> <Works/> </Page>
                 <Page heightAuto={true}> <Offer/> </Page>
