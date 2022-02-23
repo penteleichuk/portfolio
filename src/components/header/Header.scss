@@ -39,7 +39,7 @@
     }
 
     &__lang-item {
-        color: #ccc;
+        color: #898686;
         font-size: .9rem;
         text-transform: uppercase;
         margin: 0 5px;
@@ -216,7 +216,7 @@
             justify-content: center;
 
             li {
-                border-bottom: 1px solid #9dcbff;
+                border-bottom: 3px dotted #7fbbff;
                 padding-bottom: 15px;
 
                 margin: 0 0 20px 0;
@@ -228,7 +228,7 @@
         }
 
         &__link_active {
-            color: #004d85;
+            color: #4a5c60;
         }
     }
 }
