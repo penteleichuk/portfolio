@@ -5,6 +5,12 @@
     margin-bottom: 20px;
   }
 
+  &__success {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #238c00;
+  }
+
   &__label {
     margin-bottom: 14px;
 
@@ -15,6 +21,10 @@
     text-align: left;
 
     color: #a0a8b3;
+
+    span {
+      color: rgb(190, 67, 67);
+    }
   }
 
   &__input, &__textarea {

@@ -10,6 +10,13 @@ export const ContactLang = {
 			email: 'Эл. адрес',
 			message: 'Сообщение',
 			button: 'Отправить сообщение',
+			validate: {
+				required: 'Обязательное поле',
+				lessName: 'Должно быть не более 50 символов.',
+				lessMessage: 'Должно быть не более 500.',
+				invalidEmail: 'Неверный адрес электронной почты',
+			},
+			success: 'Письмо успешно было отправлено 😊',
 		},
 	},
 	['en']: {
@@ -23,6 +30,13 @@ export const ContactLang = {
 			email: 'email',
 			message: 'message',
 			button: 'Send message',
+			validate: {
+				required: 'Required',
+				lessName: 'Must be 15 characters or less',
+				lessMessage: 'Must be 15 characters or less',
+				invalidEmail: 'Invalid email address',
+			},
+			success: 'Email sent successfully 😊',
 		},
 	},
 };
