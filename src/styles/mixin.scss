@@ -1,0 +1,29 @@
+@use './vars';
+
+@mixin box-shadow-custom {
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+}
+
+@mixin background-custom {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+}
+
+@mixin paper-style($borderRadius: 6px) {
+  position: relative;
+
+  color: vars.$primary-color;
+  border-radius: $borderRadius;
+  transition: 0.4s;
+  @include background-custom;
+  @include box-shadow-custom;
+}
+
+@mixin paper-padding($pTop: 25px, $tLeft: 35px) {
+  padding: $pTop $tLeft;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

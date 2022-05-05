@@ -1,0 +1,19 @@
+@use './../../styles/mixin';
+
+.contacts {
+    width: 100%;
+
+    &__form {
+        @include mixin.paper-padding(30px, 30px);
+        @include mixin.paper-style($borderRadius: 10px);
+    }
+
+    &__title {
+        margin-top: 15px;
+        margin-bottom: 50px;
+
+        text-align: center;
+
+        color: #3c3e41;
+    }
+}

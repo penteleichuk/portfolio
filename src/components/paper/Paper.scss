@@ -1,0 +1,36 @@
+@use './../../styles/mixin';
+
+.paper {
+  @include mixin.paper-style;
+  @include mixin.paper-padding;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &__icon {
+    margin-bottom: 15px;
+    width: 40px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 32px;
+
+    color: #1e2125;
+  }
+
+  &__description {
+    margin-bottom: 22px;
+
+    font-size: 1.1rem;
+    line-height: 28px;
+
+    color: #3c3e41;
+    transition: 0.4s;
+  }
+}

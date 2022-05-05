@@ -1,0 +1,36 @@
+@use './mixin';
+
+.button {
+  text-align: center;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  @include mixin.paper-style;
+  @include mixin.flex-center;
+  @include mixin.paper-padding(15px, 25px);
+
+  &:hover {
+    color: #fff;
+    transform: translateY(-3px);
+    cursor: pointer;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    transition: 0.4s;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(145deg, #6a68ce, #279ffe);
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &:hover:before {
+    opacity: 1;
+  }
+}

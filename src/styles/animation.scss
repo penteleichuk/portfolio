@@ -1,0 +1,12 @@
+@media (min-width: 992px) {
+  .text-transition {
+    transition: all 0.8s ease 0s;
+    transform: translate(0px, 120%);
+    opacity: 0;
+  }
+
+  .text-transition.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}

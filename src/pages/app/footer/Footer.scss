@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    margin-top: 35px;
+  }
+
+  &__item {
+    margin: 10px 10px;
+  }
+
+  &__rights {
+    margin-top: 25px;
+  }
+
+  &__to-up {
+    position: absolute;
+    right: 15px;
+
+    @media (max-width: 530px) {
+      top: 15%;
+      right: auto;
+      transform: translate(0, -50%);
+    }
+
+    img {
+      opacity: .3;
+      transition: .4s;
+
+      &:hover {
+        cursor: pointer;
+        opacity: .8;
+        transition: .4s;
+      }
+    }
+  }
+}
+

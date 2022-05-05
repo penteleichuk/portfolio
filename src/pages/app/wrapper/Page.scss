@@ -1,0 +1,26 @@
+.page {
+  &__screen {
+    position: relative;
+
+    display: flex;
+    min-height: 100vh;
+    padding: 40px 0;
+
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  &__auto {
+    min-height: auto;
+  }
+
+  &__align {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+    background-color: #ECF0F3;
+  }
+}
