@@ -34,3 +34,9 @@
     transition: 0.4s;
   }
 }
+
+@media (max-width: 767px) {
+  .paper {
+    padding: 15px 15px;
+  }
+}
