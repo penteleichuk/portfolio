@@ -12,7 +12,7 @@ export const Skills = ({ language }: { language: LanguageType }) => {
         <div className="skill">
             <h2 className="skill__title title">{Lang.title}</h2>
             <div className="skill__body">
-                <Fade cascade duration={1000} fraction={1} triggerOnce={true} damping={0} direction={'up'}>
+                <Fade cascade duration={300} triggerOnce={true} direction={'right'}>
                     {MySkillData.map((el, key) => {
                         return <Paper key={key} title={el.title} icon={el.image} />
                     })}
