@@ -50,6 +50,12 @@ export const Header = ({ setLanguage, language }: HeaderPropsType) => {
                                     <Link to={el[0]} onClick={onClickMobileHandler} spy={true} smooth={true} className="header__link" activeClass="header__link_active">{el[1]}</Link>
                                 </li>
                             })}
+                            <li>
+                                <a href={"/cv.pdf"} style={{
+                                    color: "#ee3c7f",
+                                    fontWeight: "bold"
+                                }} className="header__link" target={"_blank"} >CV</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
