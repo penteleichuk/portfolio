@@ -13,7 +13,7 @@ export const Article = ({ children, link = '/', ...props }: PaperPropsType) => {
     return (
         <article className="article">
             <div className="article__image">
-                <img src={props.image} alt="my work" />
+                <img src={props.image} alt={props.title} />
                 <a href={link} rel="noopener noreferrer" target={"_blank"} className="article__button">{props.view}</a>
             </div>
 
