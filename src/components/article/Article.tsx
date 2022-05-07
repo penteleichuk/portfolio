@@ -1,4 +1,5 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
+import LazyLoad from 'react-lazyload';
 import './Article.scss';
 
 type PaperPropsType = {
@@ -13,7 +14,9 @@ export const Article = ({ children, link = '/', ...props }: PaperPropsType) => {
     return (
         <article className="article">
             <div className="article__image">
-                <img src={props.image} alt={props.title} />
+                <LazyLoad height={280}>
+                    <img src={props.image} alt={props.title} />
+                </LazyLoad>
                 <a href={link} rel="noopener noreferrer" target={"_blank"} className="article__button">{props.view}</a>
             </div>
 

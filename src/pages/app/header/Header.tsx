@@ -54,7 +54,7 @@ export const Header = ({ setLanguage, language }: HeaderPropsType) => {
                                 <a href={"/cv.pdf"} style={{
                                     color: "#ee3c7f",
                                     fontWeight: "bold"
-                                }} className="header__link" target={"_blank"} >CV</a>
+                                }} className="header__link" target={"_blank"} rel="noopener noreferrer" >CV</a>
                             </li>
                         </ul>
                     </nav>

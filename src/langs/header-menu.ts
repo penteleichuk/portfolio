@@ -1,11 +1,11 @@
 export const HeaderMenuLang = {
-	['ru']: {
+	ru: {
 		main: 'Обо мне',
 		skill: 'Навыки',
 		work: 'Проекты',
 		contact: 'Контакты',
 	},
-	['en']: {
+	en: {
 		main: 'About me',
 		skill: 'My Skill',
 		work: 'Projects',

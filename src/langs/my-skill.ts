@@ -1,8 +1,8 @@
 export const MySkillLang = {
-	['ru']: {
+	ru: {
 		title: 'Мои навыки',
 	},
-	['en']: {
+	en: {
 		title: 'My skills',
 	},
 };

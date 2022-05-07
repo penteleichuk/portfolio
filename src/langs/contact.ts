@@ -1,5 +1,5 @@
 export const ContactLang = {
-	['ru']: {
+	ru: {
 		considering: {
 			title: 'Рассматриваю варианты удалённой работы',
 			button: 'Найми меня',
@@ -19,7 +19,7 @@ export const ContactLang = {
 			success: 'Письмо успешно было отправлено 😊',
 		},
 	},
-	['en']: {
+	en: {
 		considering: {
 			title: 'CONSIDERING REMOTE WORK OPTIONS',
 			button: 'Hire me',
