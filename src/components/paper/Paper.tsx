@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import LazyLoad from 'react-lazyload';
 import './Paper.scss';
 
