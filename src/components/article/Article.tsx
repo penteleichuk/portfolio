@@ -15,7 +15,7 @@ export const Article = ({ children, link = '/', ...props }: PaperPropsType) => {
     return (
         <article className="article">
             <div className="article__image">
-                <PhotoSkeleton height={281}>
+                <PhotoSkeleton>
                     <LazyLoad>
                         <img src={props.image} alt={props.title} />
                     </LazyLoad>

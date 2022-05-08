@@ -151,3 +151,10 @@
     }
 }
 
+@media (max-width: 470px) {
+    .main {
+        &__fanny-list {
+            justify-content: space-between;
+        }
+    }
+}
