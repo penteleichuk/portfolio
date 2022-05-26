@@ -3,7 +3,7 @@ import LotteryImg from './../assets/images/projects/lottery.jpg';
 import LauncherImg from './../assets/images/projects/launcher.jpg';
 import SiteTouchImg from './../assets/images/projects/site_touch.jpg';
 import SocialImg from './../assets/images/projects/social.jpg';
-import ToDoImg from './../assets/images/projects/todo.png';
+import ToDoImg from './../assets/images/projects/todo.jpg';
 import PortfolioImg from './../assets/images/projects/portfolio.jpg';
 
 export const ProjectData = [
@@ -19,7 +19,7 @@ export const ProjectData = [
 		image: ToDoImg,
 		description:
 			'React, Redux, API requests, clean css, axios, thunks, and more.',
-		link: 'https://github.com/vasyok28/samurai',
+		link: 'https://github.com/vasyok28/To-Do-List',
 	},
 	{
 		title: 'Social Network',
