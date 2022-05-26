@@ -15,8 +15,8 @@ export const ProjectLang = {
 		hover: 'Дивитись',
 	},
 	ro: {
-		beforeTitle: 'Visit my portfolio',
-		title: 'My Portfolio',
-		hover: 'View',
+		beforeTitle: 'Vizitează-mi portofoliul',
+		title: 'Portofoliul meu',
+		hover: 'Vedere',
 	},
 };

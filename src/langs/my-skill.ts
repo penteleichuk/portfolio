@@ -9,6 +9,6 @@ export const MySkillLang = {
 		title: 'Мої навички',
 	},
 	ro: {
-		title: 'My skills',
+		title: 'Abilitatile mele',
 	},
 };

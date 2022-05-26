@@ -30,13 +30,13 @@ export const AboutMeLang = {
 		reserved: 'Всі права захищені',
 	},
 	ro: {
-		title: 'WELCOME TO MY PORTFOLIO',
-		im: 'Hi, I’m',
-		name: 'Vasya Penteleichuk',
+		title: 'BINE AȚI VENIT ÎN PORTOFOLIUL MEU',
+		im: 'Buna, eu sunt',
+		name: 'Vasile Penteleiciuc',
 		description:
-			'I’m a front-end developer who has a results-focused attitude to creating SPA, using React(JS/TS), Redux. I would like to find project work and full-time employment in a company with a modern approach to development and a collaborative team.',
-		mood: 'HOBBY',
-		profession: 'Front-end developer',
-		reserved: 'All rights reserved',
+			'Sunt un inginer front-end care are o atitudine concentrată pe rezultate pentru a crea SPA, folosind React(JS/TS), Redux. Aș dori să găsesc un loc de muncă cu normă întreagă într-o companie cu o abordare modernă a dezvoltării și o echipă de colaborare.',
+		mood: 'Pasiune',
+		profession: 'Front-end inginer',
+		reserved: 'Toate drepturile rezervate',
 	},
 };

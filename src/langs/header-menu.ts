@@ -18,9 +18,9 @@ export const HeaderMenuLang = {
 		contact: 'Контакти',
 	},
 	ro: {
-		main: 'About me',
-		skill: 'My Skill',
-		work: 'Projects',
-		contact: 'Contacts',
+		main: 'Despre mine',
+		skill: 'Îndemânarea mea',
+		work: 'Proiecte',
+		contact: 'Contacte',
 	},
 };
