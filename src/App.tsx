@@ -10,7 +10,7 @@ import { Footer } from "./pages/app/footer/Footer";
 import './styles/app.scss';
 import './styles/animation.scss'
 
-export type LanguageType = 'ru' | 'en';
+export type LanguageType = 'ru' | 'en' | 'ukr' | 'ro';
 
 export const App = () => {
     const [language, setLanguage] = useState<LanguageType>('en');

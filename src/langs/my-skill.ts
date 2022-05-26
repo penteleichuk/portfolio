@@ -5,4 +5,10 @@ export const MySkillLang = {
 	en: {
 		title: 'My skills',
 	},
+	ukr: {
+		title: 'Мої навички',
+	},
+	ro: {
+		title: 'My skills',
+	},
 };

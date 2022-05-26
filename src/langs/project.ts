@@ -9,4 +9,14 @@ export const ProjectLang = {
 		title: 'My Portfolio',
 		hover: 'View',
 	},
+	ukr: {
+		beforeTitle: 'Відвідайте моє портфоліо',
+		title: 'Моє портфоліо',
+		hover: 'Дивитись',
+	},
+	ro: {
+		beforeTitle: 'Visit my portfolio',
+		title: 'My Portfolio',
+		hover: 'View',
+	},
 };

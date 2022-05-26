@@ -38,7 +38,9 @@ export const Header = ({ setLanguage, language }: HeaderPropsType) => {
                 <div className="header__body">
                     <div className="header__lang">
                         <div className={`header__lang-item ${language === 'en' ? 'active' : ''}`} onClick={() => setLanguage('en')}>Eng</div> /
-                        <div className={`header__lang-item ${language === 'ru' ? 'active' : ''}`} onClick={() => setLanguage('ru')}>Rus</div>
+                        <div className={`header__lang-item ${language === 'ru' ? 'active' : ''}`} onClick={() => setLanguage('ru')}>Rus</div> /
+                        <div className={`header__lang-item ${language === 'ukr' ? 'active' : ''}`} onClick={() => setLanguage('ukr')}>Ukr</div> /
+                        <div className={`header__lang-item ${language === 'ro' ? 'active' : ''}`} onClick={() => setLanguage('ro')}>RO</div>
                     </div>
                     <div onClick={onClickBurgerHandler} className={`header__burger${collapsed ? ' active' : ''}`}>
                         <span> </span>
