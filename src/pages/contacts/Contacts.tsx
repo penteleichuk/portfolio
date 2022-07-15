@@ -48,8 +48,8 @@ export const Contacts = ({language}: { language: LanguageType }) => {
         onSubmit: async values => {
             const {email, name, message} = values;
 
-            //formik.resetForm();
-            //setMessage(Lang.form.success);
+            formik.resetForm();
+            setMessage(Lang.form.success);
 
             try {
                 await send(email, name, message);
