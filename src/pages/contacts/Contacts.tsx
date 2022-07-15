@@ -53,6 +53,7 @@ export const Contacts = ({language}: { language: LanguageType }) => {
 
             try {
                 await send(email, name, message);
+                console.log('Successful email...')
             } catch (e) {
                 console.error(e, "error send email");
             }
