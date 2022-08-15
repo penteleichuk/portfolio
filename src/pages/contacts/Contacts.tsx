@@ -1,10 +1,11 @@
-import { useFormik } from 'formik';
-import { useState } from 'react';
-import { LanguageType } from '../../App';
-import { ContactLang } from '../../langs/contact';
+import {useFormik} from 'formik';
+import {useState} from 'react';
+import {LanguageType} from '../../App';
+import {ContactLang} from '../../langs/contact';
 import './Contacts.scss';
+import {send} from "../../utilities/contact";
 
-export const Contacts = ({ language }: { language: LanguageType }) => {
+export const Contacts = ({language}: { language: LanguageType }) => {
     const [message, setMessage] = useState<string | null>(null);
     const Lang = ContactLang[language];
 
@@ -44,10 +45,18 @@ export const Contacts = ({ language }: { language: LanguageType }) => {
             message: '',
         },
         validate,
-        onSubmit: values => {
+        onSubmit: async values => {
+            const {email, name, message} = values;
+
             formik.resetForm();
             setMessage(Lang.form.success);
-            console.log(values);
+
+            try {
+                await send(email, name, message);
+                console.log('Successful email...')
+            } catch (e) {
+                console.error(e, "error send email");
+            }
         },
     });
 
@@ -59,23 +68,30 @@ export const Contacts = ({ language }: { language: LanguageType }) => {
                     <form className="form__wrapper" id="contact-form" onSubmit={formik.handleSubmit}>
                         <div className="form__group">
                             <label className="form__label" htmlFor="contact_name">{Lang.form.name}
-                                {formik.touched.name && formik.errors.name ? <span> - {formik.errors.name}</span> : null}</label>
-                            <input className="form__input" id="contact_name" {...formik.getFieldProps('name')} type="text" />
+                                {formik.touched.name && formik.errors.name ?
+                                    <span> - {formik.errors.name}</span> : null}</label>
+                            <input className="form__input" id="contact_name" {...formik.getFieldProps('name')}
+                                   type="text"/>
                         </div>
                         <div className="form__group">
                             <label className="form__label" htmlFor="contact_email">{Lang.form.email}
-                                {formik.touched.email && formik.errors.email ? <span> - {formik.errors.email}</span> : null}</label>
-                            <input className="form__input" id="contact_email" {...formik.getFieldProps('email')} type="email" />
+                                {formik.touched.email && formik.errors.email ?
+                                    <span> - {formik.errors.email}</span> : null}</label>
+                            <input className="form__input" id="contact_email" {...formik.getFieldProps('email')}
+                                   type="email"/>
                         </div>
                         <div className="form__group">
                             <label className="form__label" htmlFor="contact_message">{Lang.form.message}
-                                {formik.touched.message && formik.errors.message ? <span> - {formik.errors.message}</span> : null}</label>
-                            <textarea className="form__textarea" id="contact_message" {...formik.getFieldProps('message')} />
+                                {formik.touched.message && formik.errors.message ?
+                                    <span> - {formik.errors.message}</span> : null}</label>
+                            <textarea className="form__textarea"
+                                      id="contact_message" {...formik.getFieldProps('message')} />
                         </div>
                         {message && <div className="form__success">{message}</div>}
-                        <div className="form__group">
+                        {!message && <div className="form__group">
                             <button type='submit' className="form__button button">{Lang.form.button}</button>
                         </div>
+                        }
                     </form>
                 </div>
             </div>

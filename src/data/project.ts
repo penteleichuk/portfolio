@@ -5,8 +5,16 @@ import SiteTouchImg from './../assets/images/projects/site_touch.jpg';
 import SocialImg from './../assets/images/projects/social.jpg';
 import ToDoImg from './../assets/images/projects/todo.jpg';
 import PortfolioImg from './../assets/images/projects/portfolio.jpg';
+import GameLauncherImg from './../assets/images/projects/game_launcher.jpg';
 
 export const ProjectData = [
+	{
+		title: 'Game launcher',
+		image: GameLauncherImg,
+		description:
+			'Freelance, React Native, TypeScript, Java, Redux, and more...',
+		link: '#',
+	},
 	{
 		title: 'Portfolio',
 		image: PortfolioImg,
@@ -51,7 +59,7 @@ export const ProjectData = [
 		title: 'Touch RP: Site',
 		image: SiteTouchImg,
 		description:
-			'UI/UX, Design; PHP, Laravel, SQL, Builder, CSS3, HTML5; BEM; Deploy; VDS; Auth, donate integration, stats user, article, more.',
+			'Laravel, SQL, Builder, CSS3, HTML5; BEM; Donate integration, and more.',
 		link: 'https://touch-rp.com/',
 	},
 ];
