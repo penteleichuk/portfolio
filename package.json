@@ -4,7 +4,7 @@
 	"private": true,
 	"homepage": "https://vasyok28.github.io/PORTFOLIO/",
 	"dependencies": {
-		"axios": "0.27.2",
+		"axios": "0.30.0",
 		"formik": "2.2.9",
 		"react": "17.0.2",
 		"react-awesome-reveal": "3.8.1",
